@@ -19,14 +19,15 @@ body{
     justify-content: center;
 }
 .cabecalho{
-    height: 350px;
+    height: 390px;
     width: 100%;
     display: flex;
     background-color: aquamarine;
     margin: 0;
     padding: 0;
-    background-image: url(imagens/golden-filhote-sentado.png);
-    
+    background-image: url(imagens/Veja\ todos\ os\ pets\ disponíveis.png);
+    background-repeat: no-repeat;
+
 }
 header{
     width: 100%;
@@ -60,15 +61,21 @@ a{
 }
 
 select{
-    border-radius: 15px;
     height: 30px;
-    background-color: #5d8a3f;
+    width: 100px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #96d472, #3f6325);
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
     color: white;
-    align-items: center;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
 }
 option{
-    border-radius: 15px;
+    background-color:#3f6325;
 }
 
 h1{
