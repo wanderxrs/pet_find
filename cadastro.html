@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Find</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="caixa">
+        <img src="imagens/logo.png" alt="">
+        <h2><strong>Cadastre-se</strong></h2>
+        <p><strong>Preencha as informações</strong></p>
+
+        <form id="formcadastro">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <br><br><br>
+
+            <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+            <br><br><br>
+
+            <input type="email" id="email" placeholder="E-mail" required>
+            <br><br><br>
+
+            <input type="number" id="telefone" placeholder="Telefone" required>
+            <br><br><br>
+
+            <input type="password" id="senha" placeholder="Senha" required>
+            <br><br><br>
+
+            <button type="submit"><strong>Cadastrar</strong></button>
+        </form>
+
+        <a href="index.html">Login</a>
+    </div>
+
+    <script>
+        const form = document.getElementById("formcadastro");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            localStorage.setItem("email", email);
+            localStorage.setItem("senha", senha);
+
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

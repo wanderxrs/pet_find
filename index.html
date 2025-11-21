@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Find</title>
     <link rel="stylesheet" href="styleindex.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="caixa">
         <img src="imagens/logo.png" alt="">
         <h2><strong>Bem vindo!</strong></h2>
         <p><strong>Pronto para encontrar o seu novo amigo?</strong></p>
-        <form action="">
-            
-            <input type="text" placeholder="E-mail">
+
+        <form id="formlogin">
+            <input type="email" id="email" placeholder="E-mail" required>
             <br><br><br>
-            <input type="password" placeholder="Senha"> <br> <br>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <br><br><br>
+            <button type="submit"><strong>Entrar</strong></button>
         </form>
-        <button><strong>Entrar</strong></button>
-        <a href="">Cadastre-se</a>
+        <a href="cadastro.html">Cadastre-se</a>
     </div>
+
+
+
+
+    <script>
+        const formlogin = document.getElementById("formlogin");
+
+        formlogin.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            const emailSalvo = localStorage.getItem("email");
+            const senhaSalva = localStorage.getItem("senha");
+
+            if (email === emailSalvo && senha === senhaSalva) {
+                window.location.href = "home.html";
+            } else {
+                alert("Email ou senha incorretos!");
+            }
+        });
+    </script>
     
 </body>
 </html>
