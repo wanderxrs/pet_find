@@ -52,10 +52,11 @@ button {
     margin-top: 30px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-a:hover{
+
+a:hover {
     color: #112e0d;
 }
