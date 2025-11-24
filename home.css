@@ -126,3 +126,175 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
 }
+.adicionar-pet{
+
+    border-radius: 15px;
+    width: 300px;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+input{
+    border-radius: 15px;
+    border: 2px solid #5d8a3f
+}
+textarea{
+    border: 1px solid #5d8a3f;
+    border-radius: 15px;
+}
+#botaoadicionar{
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #96d472, #3f6325);
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+}
+#feed-animais{
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.post {
+    width: 280px;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
+}
+.post img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+.desc {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 6px;
+}
+.nomeDiv{
+    background-color: blue;
+}
+.posteradocao{
+    background-image: url(imagens/poster.png);
+    height: 390px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    border-radius: 15px;
+}
+
+.caixadepost{
+    height: 310px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+}
+.postfake {
+    width: 280px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.petimg{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.desc {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.caixadeajuda{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+.botoesdeajuda{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.doacaoajuda{
+    background-color: green;
+    height: 50px;
+    width: 400px;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.voluntarioajuda{
+    background-color: orange;
+    height: 50px;
+    width: 400px;
+    border-radius: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+.rodape{
+    background-color: #96d472;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin: 40px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#logorodape{
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+#logodorodape{
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+#direitosreservado{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14px;
+}
+#barradelinks{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
