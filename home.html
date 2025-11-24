@@ -131,7 +131,6 @@
     
 
     <script>
-        // ADICIONAR POST
         function addPost() {
             const fileInput = document.getElementById('fileInput');
             const nomeInput = document.getElementById('nomePet');
@@ -168,7 +167,6 @@
                 descDiv.className = 'desc';
                 descDiv.textContent = descricao;
 
-                // MONTA POST
                 postDiv.appendChild(img);
                 postDiv.appendChild(nomeDiv);
                 postDiv.appendChild(telDiv);
@@ -179,7 +177,6 @@
 
             reader.readAsDataURL(file);
 
-            // Limpar campos
             fileInput.value = "";
             nomeInput.value = "";
             descInput.value = "";
@@ -187,7 +184,6 @@
             document.getElementById('tipoAnimal').value = "cachorro";
         }
 
-        // FILTRAR PETS
         function filtrar() {
             const filtro = document.getElementById('filtro').value;
             const posts = document.querySelectorAll('.post');
