@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Find</title>
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/imagem-icones/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
     <div class="cabecalho">
-        <img src="imagens/logo.png" alt="" id="logo">
+        <img src="imagens/imagem-icones/logo.png" alt="" id="logo">
 
         <header>
             <nav>
@@ -60,10 +60,13 @@
 
         <button id="botaoadicionar" onclick="addPost()">Publicar</button>
     </section>
+
     <br>
     <div class="posteradocao">
     </div>
     <br> <br>
+
+    <h1 style="color: #5d8a3f; margin-left: 100px; margin-top: 50px;">Adote!</h1>
     <div class="caixadepost">
         <div class="postfake">
             <img src="imagens/112573581152289.webp" alt="" class="petimg">
@@ -81,7 +84,7 @@
             <img src="imagens/336538829178576.webp" alt="" class="petimg">
             <div class="desc"><b>Nome:</b> Juan</div>
             <div class="desc"><b>Telefone:</b> 3456-7890</div>
-            <div class="desc">Curiosa</div>
+            <div class="desc"></div>
         </div>
         <div class="postfake" class="petimg">
             <img src="imagens/458444474878053.webp" alt="" class="petimg">
@@ -110,27 +113,37 @@
         </div>
     </div>
 
-    <br><br>
+    <br><br><br><br>
+
     <div class="rodape">
         <div id="logorodape">
-            <img src="imagens/logo.png" alt="" id="logodorodape">
-            <p id="direitosreservado">&nbsp; &nbsp; &copy 2025 PetFind. Todos os direitos reservados.</p>
+            <img src="imagens/imagem-icones/logo-branco.png" alt="" id="logodorodape">
+            <p id="direitosreservado" style="color: white;">&nbsp; &nbsp; &copy 2025 PetFind. Todos os direitos reservados.</p>
+        </div>
 
-        </div>
         <div id="barradelinks">
-            <a href="" style="color: white;">aaaaaaa</a>
-            <a href="" style="color: white;">aaaaaaa</a> 
-            <a href="" style="color: white;">aaaaaaa</a> 
-            <a href="" style="color: white;"> aaaaaaa</a> 
-            <a href="" style="color: white;">aaaaaaa</a>
+            <a href="" style="color: white; font-size: 14px;">Sobre nós</a>
+            <a href="" style="color: white; font-size: 14px;">Faça uma doação</a> 
+            <a href="" style="color: white; font-size: 14px;">Cuidados</a> 
+            <a href="" style="color: white; font-size: 14px;">Fale conosco</a> 
+            <a href="" style="color: white; font-size: 14px;">Cadastre-se</a>
         </div>
-        <div></div>
+
+        <div class="redesecontatos">
+            <a href=""><img src="imagens/imagem-icones/facebook-branco.png" alt="" style="height: 50px;"></a>
+            <a href=""><img src="imagens/imagem-icones/instagram-branco.png" alt="" style="height: 45px;"></a>
+            <a href=""><img src="imagens/imagem-icones/whatsapp-branco-1.png" alt="" style="height: 50px;"></a>
+        </div>
     </div>
 
     <br><br>
     
-
     <script>
+        document.querySelector('.cd3').addEventListener('click', function () {
+            const form = document.querySelector('.adicionar-pet');
+            form.style.display = 'block';
+        });
+
         function addPost() {
             const fileInput = document.getElementById('fileInput');
             const nomeInput = document.getElementById('nomePet');
@@ -182,8 +195,8 @@
             descInput.value = "";
             telInput.value = "";
             document.getElementById('tipoAnimal').value = "cachorro";
+            document.querySelector('.adicionar-pet').style.display = 'none';
         }
-
         function filtrar() {
             const filtro = document.getElementById('filtro').value;
             const posts = document.querySelectorAll('.post');
