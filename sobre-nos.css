@@ -1,40 +1,65 @@
 body {
     background-image: url(imagens/login-fundo.png);
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+#logo {
+    height: 80px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5d8a3f;
+    font-size: 17px;
 }
 
 .caixa {
     height: 1000px;
     width: 925px;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.493) ;
-    border-radius: 30PX;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    backdrop-filter: blur(5px);
     flex-direction: column;    
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 30px;
+    margin: 60px auto 0;
+    backdrop-filter: blur(5px);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
 }
 
 p {
-  margin-top: 0;
-  font-size: 17px;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(54, 28, 7);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(54, 28, 7);
 }
 
 h1 {
     color: rgb(77, 122, 39);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    font-size: 40px ;
-    margin-top: 60px;
-    margin-bottom: 20;
+    font-size: 40px;
+    margin: 60px auto 20px;
 }
 
 button {
@@ -45,18 +70,16 @@ button {
     border: none;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
     color: white;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0;
     cursor: pointer;
     font-size: 18px;
-    margin-top: 30px;
 }
 
-a {
+button a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+button a:hover {
     color: #112e0d;
 }
