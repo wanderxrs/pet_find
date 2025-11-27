@@ -16,9 +16,9 @@
             <nav>
                 <ul>
                     <li><a href="" id="adotar"><strong>Adotar</strong></a></li>
-                    <li><a href=""><strong>Sobre nós</strong></a></li>
-                    <li><a href=""><strong>Doação</strong></a></li>
-                    <li><a href=""><strong>Fale conosco</strong></a></li>
+                    <li><a href="" id="sobrenos"><strong>Sobre nós</strong></a></li>
+                    <li><a href="" id="doacao"><strong>Doação</strong></a></li>
+                    <li><a href="" id="faleconosco"><strong>Fale conosco</strong></a></li>
                 </ul>
             </nav>
 
@@ -41,7 +41,7 @@
     <br><br><br>
 
     <section class="adicionar-pet">
-        <h2 style="color: #5d8a3f;">Adicionar pet para adoção</h2>
+        <h2 style="color: #5d8a3f; margin-left: 10px;" >Adicionar pet para adoção</h2>
 
         <input type="file" id="fileInput" accept="image/*"><br><br>
 
@@ -51,7 +51,7 @@
 
         <input type="number" id="telefone" placeholder="Telefone para contato" required><br><br>
 
-        <label style="color: #5d8a3f;">Tipo do animal:</label><br>
+        <label style="color: #5d8a3f; margin-left: 10px;" >Tipo do animal:</label><br>
         <select id="tipoAnimal">
             <option value="cachorro">Cachorro</option>
             <option value="gato">Gato</option>
@@ -97,7 +97,7 @@
     <div id="feed-animais"></div>
     <br><br><br>
     
-    <div class="caixadeajuda">
+    <footer class="caixadeajuda">
         <h2 id="ajudenos">Ajude-nos:</h2>
         <div class="botoesdeajuda">
             <div class="doacaoajuda">
@@ -111,11 +111,11 @@
                 </strong>
             </div>
         </div>
-    </div>
+    </footer>
 
     <br><br><br><br>
 
-    <div class="rodape">
+    <footer class="rodape">
         <div id="logorodape">
             <img src="imagens/imagem-icones/logo-branco.png" alt="" id="logodorodape">
             <p id="direitosreservado" style="color: white;">&nbsp; &nbsp; &copy 2025 PetFind. Todos os direitos reservados.</p>
@@ -134,9 +134,8 @@
             <a href=""><img src="imagens/imagem-icones/instagram-branco.png" alt="" style="height: 45px;"></a>
             <a href=""><img src="imagens/imagem-icones/whatsapp-branco-1.png" alt="" style="height: 50px;"></a>
         </div>
-    </div>
+    </footer>
 
-    <br><br>
     
     <script>
         document.querySelector('.cd3').addEventListener('click', function () {

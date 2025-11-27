@@ -48,6 +48,9 @@ ul{
 li{
     list-style: none;
 }
+#sobrenos:hover, #faleconosco:hover, #doacao:hover{
+    color: #2f4e1d;
+}
 a{
     text-decoration: none;
     color: #5d8a3f;
@@ -100,6 +103,7 @@ h1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .cd2{
     height: 100px;
@@ -112,6 +116,7 @@ h1{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .cd3{
     height: 100px;
@@ -120,15 +125,20 @@ h1{
     display: flex;
     border-radius: 15px;
     border: 3px solid #5d8a3f;
-    background-image: url(imagens/imagem-icones/denuncia-icone.png);
+    background-image: url(imagens/imagem-icones/add-pet.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.cd1:hover, .cd2:hover, .cd3:hover{
+    box-shadow: 0px 0px 15px #5d8a3f85;
+    
 }
 .adicionar-pet{
     border-radius: 15px;
     width: 400px;
-    height: 430px;
+    height: 490px;
     align-items: center;
     justify-content: center;
     margin-left: auto;
@@ -253,7 +263,7 @@ textarea{
 
 }
 .doacaoajuda{
-  background: linear-gradient(to bottom, #7ee27d, #2f8f42);
+  background: linear-gradient(to bottom, #96d472, #3f6325);
     height: 50px;
     width: 400px;
     border-radius: 30px;
