@@ -15,18 +15,16 @@ document.getElementById("header").innerHTML = `
 `;
 
 document.getElementById("footer").innerHTML = `
-    <div class="rodape">
+    <footer class="rodape">
         <div id="logorodape">
-            <img src="imagens/logo.png" alt="" id="logodorodape">
-            <p id="direitosreservado">&nbsp; &nbsp; &copy 2025 PetFind. Todos os direitos reservados.</p>
+            <img src="imagens/imagem-icones/logo-branco.png" alt="" id="logodorodape">
+            <p id="direitosreservado" style="color: white;">&nbsp; &nbsp; &copy 2025 PetFind. Todos os direitos reservados.</p>
+        </div>
 
+        <div class="redesecontatos">
+            <a href=""><img src="imagens/imagem-icones/facebook-branco.png" alt="" style="height: 50px;"></a>
+            <a href=""><img src="imagens/imagem-icones/instagram-branco.png" alt="" style="height: 45px;"></a>
+            <a href=""><img src="imagens/imagem-icones/whatsapp-branco-1.png" alt="" style="height: 50px;"></a>
         </div>
-        <div id="barradelinks">
-            <a href="" style="color: white;">aaaaaaa</a>
-            <a href="" style="color: white;">aaaaaaa</a> 
-            <a href="" style="color: white;">aaaaaaa</a> 
-            <a href="" style="color: white;"> aaaaaaa</a> 
-            <a href="" style="color: white;">aaaaaaa</a>
-        </div>
-    </div>
+    </footer>
 `;

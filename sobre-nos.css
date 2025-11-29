@@ -98,39 +98,38 @@ button a:hover {
 }
 
 .rodape {
-    background-color: #96d472;
-    height: 300px;
+    background-color: #406928;
     width: 100%;
     display: flex;
     margin: 0;
-    justify-content: space-between;
-    padding: 0 20px;
+    padding: 0;
+    height: auto;
 }
 
-#logorodape {
+#logorodape{
     height: 300px;
     width: 400px;
     display: flex;
 }
 
-#logodorodape {
+#logodorodape{
     height: 70px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20px;
 }
 
-#direitosreservado {
+#direitosreservado{
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-#barradelinks {
+.redesecontatos{
+    width: 800px;
     height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
     justify-content: center;
+    gap: 40px;
 }

@@ -88,14 +88,7 @@ a{
     margin-bottom: auto;
     font-size: 13px;
 }
-#barradelinks{
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 .redesecontatos{
     width: 800px;
     height: 300px;
