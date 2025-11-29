@@ -8,6 +8,7 @@ body{
     height: 80px;
     position: absolute;
     margin-left: 20px;
+    z-index: 9999;
 }
 #adotar{
     background-color:#36432b;
@@ -24,7 +25,7 @@ body{
     display: flex;
     margin: 0;
     padding: 0;
-    background-image: url(imagens/Veja\ todos\ os\ pets\ disponíveis.png);
+    background-image: url(imagens/imagem-header/golden-header-roxo.jpg);
     background-repeat: no-repeat;
 
 }
@@ -32,7 +33,8 @@ header{
     width: 100%;
     height: 90px;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.795);
+ backdrop-filter: blur(15px);
+ background-color: rgba(0, 0, 0, 0.068);
     align-items: center;
     justify-content: center;
 
@@ -92,47 +94,22 @@ h1{
 
 }
 
-.cd1{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    display: flex;
-    border-radius: 15px;
-    border: 3px solid #5d8a3f;
-    background-image: url(imagens/imagem-icones/icone-livro.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.cd2{
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    display: flex;
-    border-radius: 15px;
-    border: 3px solid #5d8a3f;
-    background-image: url(imagens/imagem-icones/icone-lampada.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
 .cd3{
     height: 100px;
     width: 100px;
     background-color: white;
     display: flex;
     border-radius: 15px;
-    border: 3px solid #5d8a3f;
-    background-image: url(imagens/imagem-icones/add-pet.png);
+    border: 3px solid #801dcd;
+    background-image: url(imagens/imagem-icones/3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .cd1:hover, .cd2:hover, .cd3:hover{
-    box-shadow: 0px 0px 15px #5d8a3f85;
+    box-shadow: 0px 0px 15px #811dcd75;
+    border-radius: 15px;
 }
 .adicionar-pet{
     border-radius: 15px;
@@ -143,23 +120,23 @@ h1{
     margin-left: auto;
     margin-right: auto;
     display: none;
-    border: 1px solid #96d472;
+    border: 1px solid #801dcd;
 }
 input{
     border-radius: 15px;
-    border: 2px solid #5d8a3f;
+    border: 2px solid #801dcd;
     margin: 10px;
 }
 textarea{
-    border: 1px solid #5d8a3f;
+    border: 1px solid #801dcd;
     border-radius: 15px;
     margin: 10px;
 }
-#botaoadicionar{
-    height: 38px;
-    width: 120px;
+#tipoAnimal{
+    height: 30px;
+    width: 100px;
     border-radius: 30px;
-    background: linear-gradient(to bottom, #96d472, #3f6325);
+    background: linear-gradient(to bottom, #ad369a, #801dcd);
     border: none;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
     color: white;
@@ -168,6 +145,33 @@ textarea{
     cursor: pointer;
     font-size: 18px;
     display: block;
+
+}
+#botaoadicionar{
+    height: 38px;
+    width: 120px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #801dcd, #ad369a);
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.288);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+}
+#textoadote{
+    background: linear-gradient(#801dcd, #366bad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px; 
+    margin-top: 50px;
+}
+#ajudenos{
+    background: linear-gradient(#801dcd, #366bad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #feed-animais{
     margin: 40px auto;
@@ -202,9 +206,9 @@ textarea{
     background-color: blue;
 }
 .posteradocao{
-    background-image: url(imagens/poster.png);
-    height: 390px;
-    width: 1270px;
+    background-image: url(imagens/anuncios/Adote.png);
+    height: 220px;
+    width: 1300px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -262,7 +266,7 @@ textarea{
 
 }
 .doacaoajuda{
-  background: linear-gradient(to bottom, #96d472, #3f6325);
+  background: linear-gradient(to left, #ad369a, #366bad);
     height: 50px;
     width: 400px;
     border-radius: 30px;
@@ -271,7 +275,7 @@ textarea{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.288);
 }
 .voluntarioajuda{
-    background: linear-gradient(to bottom, #f7a457, #cc5f00);
+    background: linear-gradient(to left,#801dcd, #ad369a);
 
     height: 50px;
     width: 400px;
@@ -281,7 +285,7 @@ textarea{
      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.288);
 }
 .rodape {
-    background-color: #406928;
+    background-color: #801dcd;
     width: 100%;
     display: flex;
     margin: 0;
