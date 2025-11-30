@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doacao.css">
+</head>
+<body>
+    <div class="caixa">
+        <div class="logo-c">
+            <img src="imagens/logo.png" alt="logo" width="160px">
+        </div>
+        <h1>DOAÇÃO - Pet Find</h1>
+        <div class="caixavalores">
+            <div class="valor">5 R$</div>
+            <div class="valor">10 R$</div>
+            <div class="valor">50 R$</div>
+            <div class="valor">100 R$</div>
+        </div>
+        <div class="formulario">
+            <p>Preencha seus dados para fazer a doação:</p>
+            <form action="">
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="text" placeholder="Nome Completo" required><br>
+                <input type="text" placeholder="CPF" required>
+            </form>
+        </div>
+        <div class="pix">
+            <p>Após clicar em doar, você receberá um QR Code para fazer o pagamento via PIX.</p>
+            <button id="btnDoar">Doar</button>
+        </div>
+        <div id="imgaparece">
+
+        </div>
+    </div>
+    <script>
+    const valores = document.querySelectorAll('.valor');
+    const botao = document.getElementById('btnDoar');
+    const imgAparece = document.getElementById('imgaparece');
+
+    // seleciona uma das caixinhas de valores
+    valores.forEach(valor => {
+        valor.addEventListener('click', () => {
+            valores.forEach(v => v.classList.remove('ativo'));
+            valor.classList.add('ativo');
+        });
+    });
+
+    // Mostrar QR Code ao clicar em Doar
+    botao.addEventListener('click', () => {
+        const selecionado = document.querySelector('.valor.ativo');
+
+        // se nada tiver selecionado aparece um alerta pra escolher um valor
+        if (!selecionado) {
+            alert("Por favor, selecione um valor para a doação.");
+            return;
+        }
+
+        // limpa antes (evita duplicar)
+        imgAparece.innerHTML = "";
+
+        // cria a imagem (isso ta diretamente ligado com a parte de baixo ai, essa cria e a de baixo indica e estiliza)
+        const img = document.createElement("img");
+
+        // essa parte ta indicando a imagem e o estilo dela, como o tamanho por exemplo
+        img.src = "imagens/qr-code-sample.png";
+        img.style.width = "300px";
+        img.style.marginTop = "20px";
+
+        // essa parte aqui adiciona a imagem dentro da div
+        imgAparece.appendChild(img);
+    });
+</script>
+
+
+</body>
+</html>
