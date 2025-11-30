@@ -21,14 +21,6 @@
                     <li><a href="fale-conosco.html" id="faleconosco"><strong>Fale conosco</strong></a></li>
                 </ul>
             </nav>
-
-            <div class="filtro">
-                <select id="filtro" onchange="filtrar()">
-                    <option value="todos"><strong>Todos</strong></option>
-                    <option value="cachorro">Só Cachorro</option>
-                    <option value="gato">Só Gato</option>
-                </select>
-            </div>
         </header>
     </div>
     <br><br>
@@ -195,18 +187,6 @@
             telInput.value = "";
             document.getElementById('tipoAnimal').value = "cachorro";
             document.querySelector('.adicionar-pet').style.display = 'none';
-        }
-        function filtrar() {
-            const filtro = document.getElementById('filtro').value;
-            const posts = document.querySelectorAll('.post');
-
-            posts.forEach(post => {
-                const tipo = post.getAttribute('data-tipo');
-
-                post.style.display = (filtro === "todos" || tipo === filtro)
-                    ? "block"
-                    : "none";
-            });
         }
     </script>
 </body>
