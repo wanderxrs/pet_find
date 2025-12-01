@@ -153,7 +153,6 @@
 
                 const postDiv = document.createElement('div');
                 postDiv.className = 'post';
-                postDiv.setAttribute('data-tipo', tipo);
 
                 const img = document.createElement('img');
                 img.src = e.target.result;
@@ -174,7 +173,6 @@
                 postDiv.appendChild(nomeDiv);
                 postDiv.appendChild(telDiv);
                 postDiv.appendChild(descDiv);
-
                 container.appendChild(postDiv);
             };
 
@@ -184,7 +182,6 @@
             nomeInput.value = "";
             descInput.value = "";
             telInput.value = "";
-            document.getElementById('tipoAnimal').value = "cachorro";
             document.querySelector('.adicionar-pet').style.display = 'none';
         }
     </script>
